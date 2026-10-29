@@ -1,0 +1,30 @@
+:root{font-family:Arial,Helvetica,sans-serif;color:#172033;background:#f4f7fb;font-synthesis:none}
+*{box-sizing:border-box}
+body{width:370px;max-height:590px;overflow-y:auto;margin:0;padding:16px;background:#f4f7fb}
+.header{display:flex;align-items:center;gap:11px;margin-bottom:16px}
+.logo{width:44px;height:44px;border-radius:12px;background:#143c78;color:#fff;display:grid;place-items:center;font-weight:800;letter-spacing:-1px}
+h1{font-size:18px;margin:0;color:#123568}
+.header p{margin:4px 0 0;color:#64748b;font-size:12px}
+.panel{background:#fff;border:1px solid #e1e8f2;border-radius:13px;padding:13px;margin-bottom:12px;box-shadow:0 2px 8px #1d35570a}
+h2{font-size:14px;margin:0 0 12px;color:#18345d}
+label{display:block;font-size:11px;font-weight:700;color:#52627a;margin:10px 0 5px}
+input,textarea{width:100%;border:1px solid #d4deeb;border-radius:8px;padding:9px 10px;background:#fff;color:#172033;font:12px Arial;outline:none}
+input:focus,textarea:focus{border-color:#4387df;box-shadow:0 0 0 2px #4387df20}
+textarea{resize:vertical;min-height:90px;line-height:1.45}
+.credit-row,.button-row{display:flex;gap:8px;align-items:center}
+.credit-row input{min-width:0;flex:1}
+.button{border:0;border-radius:8px;padding:9px 11px;font-size:11px;font-weight:700;cursor:pointer}
+.primary{background:#1764c0;color:#fff}.primary:hover{background:#104f9b}
+.secondary{background:#eaf1fa;color:#23466f}.secondary:hover{background:#dce8f7}
+.hint{font-size:10px;line-height:1.45;color:#718096;margin:8px 0 0}
+.list-heading{display:flex;justify-content:space-between;align-items:center}
+.list-heading h2{margin-bottom:8px}
+.count{font-size:11px;color:#1764c0;background:#e8f1ff;border-radius:20px;padding:3px 8px}
+.prompt-list{display:flex;flex-direction:column;gap:8px;margin-top:10px}
+.prompt-card{border:1px solid #e2eaf4;border-radius:9px;padding:10px;background:#fbfdff}
+.prompt-card h3{font-size:12px;margin:0 0 5px;color:#173b6c;overflow-wrap:anywhere}
+.prompt-card p{font-size:10px;color:#62718a;white-space:pre-wrap;overflow-wrap:anywhere;max-height:65px;overflow:hidden;margin:0 0 9px;line-height:1.4}
+.card-actions{display:flex;gap:6px;flex-wrap:wrap}
+.card-actions button{font-size:10px;padding:6px 8px}
+.export-row{margin-top:10px}.export-row button{flex:1}
+footer{text-align:center;color:#8a97a9;font-size:10px;padding:2px 0 6px}
