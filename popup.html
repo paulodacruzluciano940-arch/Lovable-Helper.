@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Lovable Helper</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">LH</div>
+    <div><h1>Lovable Helper</h1><p>Organiza. Planeia. Cria.</p></div>
+  </header>
+
+  <section class="panel">
+    <h2>Controlo de utilização</h2>
+    <label for="credits">Créditos disponíveis (registo manual)</label>
+    <div class="credit-row">
+      <input id="credits" type="number" min="0" step="1" placeholder="Ex.: 5">
+      <button id="saveCredits" class="button primary">Guardar</button>
+    </div>
+    <p id="creditStatus" class="hint">Regista aqui os teus créditos; a extensão não lê nem altera a conta Lovable.</p>
+  </section>
+
+  <section class="panel">
+    <h2>Guardar um prompt</h2>
+    <label for="promptTitle">Título</label>
+    <input id="promptTitle" type="text" maxlength="80" placeholder="Ex.: Criar página de vendas">
+    <label for="promptText">Prompt</label>
+    <textarea id="promptText" rows="5" placeholder="Escreve ou cola aqui o teu prompt..."></textarea>
+    <div class="button-row">
+      <button id="savePrompt" class="button primary">Guardar prompt</button>
+      <button id="clearForm" class="button secondary">Limpar</button>
+    </div>
+    <p id="formStatus" class="hint" role="status"></p>
+  </section>
+
+  <section class="panel">
+    <div class="list-heading"><h2>Os meus prompts</h2><span id="promptCount" class="count">0</span></div>
+    <input id="search" type="search" placeholder="Pesquisar prompts...">
+    <div id="promptList" class="prompt-list"></div>
+    <p id="emptyState" class="hint">Ainda não guardaste prompts.</p>
+    <div class="button-row export-row">
+      <button id="exportData" class="button secondary">Exportar cópia</button>
+      <button id="importData" class="button secondary">Importar cópia</button>
+      <input id="importFile" type="file" accept="application/json,.json" hidden>
+    </div>
+    <p id="backupStatus" class="hint" role="status"></p>
+  </section>
+
+  <footer>Os dados ficam guardados localmente neste navegador.</footer>
+  <script src="popup.js"></script>
+</body>
+</html>
