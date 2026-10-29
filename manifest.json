@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Lovable Helper",
+  "version": "1.0.0",
+  "description": "Organiza prompts e acompanha manualmente o uso do Lovable.",
+  "permissions": [
+    "storage"
+  ],
+  "action": {
+    "default_title": "Lovable Helper",
+    "default_popup": "popup.html"
+  }
+}
